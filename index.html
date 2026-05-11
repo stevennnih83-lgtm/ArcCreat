@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jasa Desain Presentation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- OPENING SCREEN -->
+  <div id="opening-screen">
+    <div class="opening-content">
+      <h1 class="glitch" style="color: #fff;">ARC CREATIVE</h1>
+      <p>Jasa Desain CV & Presentation Profesional</p>
+      <button onclick="startApp()">MULAI</button>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content" class="hidden">
+
+    <div class="header-box">
+      <h1>Jasa Desain CV/Presentation/Word</h1>
+
+      <div class="tabs">
+        <button class="tab-btn active" onclick="showTab(event,'templates')">Templates</button>
+        <button class="tab-btn" onclick="showTab(event,'presentation')">Presentation</button>
+      </div>
+    </div>
+
+    <section class="grid-container">
+
+      <!-- TEMPLATES -->
+      <div id="templates" class="tab-content active">
+        <ul>
+          <li class="clickable"
+              data-title="CV ATS Friendly"
+              data-info="Template CV yang lolos sistem ATS dan cocok untuk melamar kerja profesional.">
+            CV ATS Friendly
+          </li>
+
+          <li class="clickable"
+              data-title="Modern CV"
+              data-info="Desain CV modern dengan tampilan clean dan elegan.">
+            Modern CV
+          </li>
+
+          <li class="clickable"
+              data-title="Creative CV"
+              data-info="Cocok untuk kamu yang ingin tampil beda dan kreatif.">
+            Creative CV
+          </li>
+        </ul>
+      </div>
+
+    <!-- APP -->
+    <section class="apps">
+      <h2>App we use :</h2>
+      <div class="grid">
+        <div class="app">Canva</div>
+        <div class="app">PowerPoint</div>
+        <div class="app">Word</div>
+        <div class="app">PDF</div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="pricing">
+      <h3>MY PRICES ARE BASED ON MY TALENT, NOT YOUR BUDGET</h3>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact">
+      <h2>Contact us :</h2>
+      <p>WhatsApp: 08xxxxxxxxxx</p>
+      <p>Payment: Dana | OVO | Gopay</p>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about fade-in">
+      <h2>About Our Service</h2>
+      <p>Kami menyediakan jasa desain profesional untuk:</p>
+
+      <ul>
+        <li>📄 CV ATS & Profesional (HR friendly)</li>
+        <li>📊 Presentation (PowerPoint & Canva)</li>
+        <li>📝 Dokumen Word (rapih & formal)</li>
+      </ul>
+
+      <p>Cocok untuk: Mahasiswa, fresh graduate, pekerja, hingga bisnis.</p>
+      <p>Semua desain bisa custom sesuai kebutuhan: warna, style, bahasa, dan tingkat formalitas.</p>
+    </section>
+
+    <!-- CUSTOM REQUEST -->
+    <div class="request-box fade-in">
+      <h3>Custom Request & Estimasi Harga</h3>
+
+      <input type="text" id="nama" placeholder="Nama kamu">
+
+      <select id="jenis">
+        <option value="CV">CV</option>
+        <option value="Presentation">Presentation</option>
+        <option value="Word">Word</option>
+      </select>
+
+      <select id="level">
+        <option value="basic">Basic</option>
+        <option value="pro">Pro</option>
+        <option value="premium">Premium</option>
+      </select>
+
+      <textarea id="deskripsi" placeholder="Detail kebutuhan kamu..."></textarea>
+
+      <h4 id="harga">Estimasi Harga: Rp 0</h4>
+
+      <button onclick="hitungHarga()">Cek Harga</button>
+      <button onclick="bayarWA()">Bayar via WhatsApp</button>
+    </div>
+
+  </main>
+
+ 
+
+  <script src="script.js"></script>
+</body>
+</html>
